@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stack>
+#include "stack"
 using namespace std ;
 stack<int> input(int size)
 {
@@ -13,7 +13,7 @@ stack<int> input(int size)
     }
     return l;
 }
-stack<int> babl_sort(stack<int> l){
+stack<int> simple_sort(stack<int> l){
     stack<int> p ;
     bool sorted = true ;
     int x,n ;
@@ -41,7 +41,7 @@ stack<int> babl_sort(stack<int> l){
     }
     if (sorted == false)
     {
-        return babl_sort(l) ;
+        return simple_sort(l) ;
     }else{
         return l ;
     }
@@ -63,7 +63,7 @@ int main()
     cout << "enter the size " << endl;
     cin >> size;
     stack<int> l = input(size);
-    l = babl_sort(l) ;
+    l = simple_sort(l) ;
     output(l);
     return 0;
 }
