@@ -93,3 +93,12 @@ void output(stack<t> l)
     
     cout <<endl ;
 }
+template <typename t>
+stack<t> reverse(stack<t> s){
+    satck<t> q ;
+    while (!s.empty())
+    {
+        q.push(s.pop());
+    }
+    return q ;
+}
