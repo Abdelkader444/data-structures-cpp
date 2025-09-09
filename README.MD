@@ -59,4 +59,4 @@ Here Code is `Inline` .
 
 ### Stack
 
-### Queue
+### Que
